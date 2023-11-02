@@ -26,8 +26,6 @@ uint64_t recursiveFunction(uint64_t a, uint64_t b, uint64_t c){
 
         return (memo[a-1][b-1][c-1]);
     }
-    
-
 }
 
 int main(){
@@ -35,11 +33,9 @@ int main(){
     
     uint64_t a, b, c;
     
-
     std::cin>>a>>b>>c;
 
     memo.resize(a, std::vector<std::vector<ull>>(b, std::vector<ull>(c,d)));
-
 
     std::cout<<recursiveFunction(a,b,c)<<" "<<cont<<std::endl;
     
