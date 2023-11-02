@@ -16,7 +16,6 @@ uint64_t recursiveFunction(uint64_t a, uint64_t b, uint64_t c){
     if(mini <= 3)
         return memo[a-1][b-1][c-1] = (a+ (2*b) + (3*c));
     
-    
     else if( (a + b + c) == 100 )
         return memo[a-1][b-1][c-1] = 0;
     
